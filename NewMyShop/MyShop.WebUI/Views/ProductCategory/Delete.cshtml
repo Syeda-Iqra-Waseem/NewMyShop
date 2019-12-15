@@ -1,4 +1,4 @@
-﻿@model MyShop.Core.Models.ProductCategory
+﻿@model ProductCategory
 
 @{
     ViewBag.Title = "Delete";
@@ -11,6 +11,14 @@
     <h4>ProductCategory</h4>
     <hr />
     <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedAt)
+        </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.Category)
         </dt>
